@@ -1,10 +1,57 @@
-#my_cake {
-    position: relative;
+// SIZES
+@SM_TIER_WIDTH: 100px; 
+@SM_TIER_HEIGHT: 50px;
 
-    div {
-        background-color: black;
-        position: absolute;
-    }
-    
+@LG_TIER_WIDTH: 150px;
+@LG_TIER_HEIGHT: 50px;
+
+#palette {
+    border: 1px solid black;
+    width: 50%;
+    float: left;
+    position: relative;
 }
 
+.tier {
+    background-color: pink;
+    margin: 0 auto;
+}
+
+#my_cake {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; 
+    border: 1px solid red; 
+
+    [data-size="small"] {
+        width: @SM_TIER_WIDTH;
+        height: @SM_TIER_HEIGHT;
+    }
+
+    [data-size="large"] {
+        width: @LG_TIER_WIDTH;
+        height: @LG_TIER_HEIGHT;
+    }   
+
+    [data-flavor="chocolate"] {
+        background-color: brown;
+    }
+
+    [data-flavor="carrot"] {
+        background-color: orange;
+    }
+
+    [data-flavor="dulce_de_leche"] {
+        background-color: beige;
+    }
+
+    [data-flavor="concord"] {
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    [data-flavor="italian_wedding"] {
+        background-color: grey;
+    }
+}

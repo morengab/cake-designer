@@ -14,52 +14,62 @@
 
 <body>
     <div id="container">
-        <nav class="slider-menu">
+        <nav class="slider_menu">
             <ul class="level-one">
-                <!-- <li>
-                    <a href="">Flavor</a>
-                        <ul class="level-two">
-                            <li>Chocolate</li>
-                            <li>Carrot</li>
-                            <li>Vanilla Dulce de Leche</li>
-                            <li>Concord</li>
-                            <li>Italian Wedding</li>
+                <li>
+                    <p>Flavor</p>
+                        <ul class="flavor_options">
+                            <li><button data-flavor="chocolate">Chocolate</button></li>
+                            <li><button data-flavor="carrot">Carrot</button></li>
+                            <li><button data-flavor="dulce_de_leche">Vanilla Dulce de Leche</button></li>
+                            <li><button data-flavor="concord">Concord</button></li>
+                            <li><button data-flavor="italian_wedding">Italian Wedding</button></li>
                         </ul>
-                </li> -->
+                </li>
                 <li>
                     <p>Size</p>
-                    <ul class="size-options">
+                    <ul class="size_options">
                         <li><button data-size="small">Small</button></li>
                         <li><button data-size="large">Large</button></li>
                         <li><button data-size="tiered">Tiered</button></li>
                     </ul>
                 </li>
-<!--                 <li>
-                    <a href="">Decorations</a>
-                    <ul>
-                        <li>Small Bow</li>
-                        <li>Bow</li>
-                        <li>Small Rose</li>
-                        <li>Rose</li>
-                        <li>Butterfly</li>
+                <li>
+                    <p>Decorations</p>
+                    <ul class="deco_options">
+                        <li><button data-deco="sm_bow">Small Bow</button></li>
+                        <li><button data-deco="bow">Bow</button></li>
+                        <li><button data-deco="rose">Rose</button></li>
+                        <li><button data-deco="bouquet">Bouquet</button></li>
+                        <li><button data-deco="butterfly">Butterfly</button></li>
                     </ul>
-                </li> -->
+                </li>
             </ul>
         </nav>
         <div id="palette">
             <figure id="my_cake">
-                <div></div>
+                <div class="tier"></div>
             </figure>
         </div>
-        <div id="calculator">
-            
+        <div id="receipt">
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                
+            </table>
+            <div id="total">$0.00</div>           
         </div>
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/utils.js"></script>
-    <script src="js/drawable.js"></script>
+    <script src="js/chargeable.js"></script>
+    <script src="js/decoration.js"></script>
     <script src="js/cake.js"></script>
+    <script src="js/calculator.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/main.js"></script>
     <script>
