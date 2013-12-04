@@ -18,8 +18,11 @@ function Calculator (cake) {
 }
 
 Calculator.prototype.renderPrice = function() {
-    // var receipt = document.getElementById("")
+    var receipt = document.getElementById("receipt"),
+        total = document.getElementById("total");
 
+    total.innerHTML = "$"+this.total;
+    
 }
 
 Calculator.prototype.updateReceipt = function() {
@@ -28,7 +31,8 @@ Calculator.prototype.updateReceipt = function() {
         cake = this.cake,
         tiers = cake.tiers;
 
-    // tiers
+    // calculate tiers
+
     total += prices.tiers[cake.attrs.size];
 
 

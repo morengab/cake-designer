@@ -4,7 +4,6 @@ $(document).ready( function () {
         var selected_flavor = e.target.dataset['flavor'];
         if (cake) {
             cake.setFlavor(selected_flavor);
-            calculator.getPrice();
         } else {
             console.log("Cake does not exist.");
         }

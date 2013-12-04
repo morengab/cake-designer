@@ -91,19 +91,3 @@ Cake.prototype.draw = function (context) {
     this.updateFlavor();
     this.updateReceipt();
 }
-
-function Decoration(attrs, type) {
-    var deco = document.createElement("div"),
-        palette = document.getElementById("palette"),
-        dflt = {
-        elem: deco
-    };
-    deco.className = "deco";
-    deco.setAttribute("data-type", type);
-    palette.appendChild(deco);
-
-    attrs = mergeWithDefault(attrs, dflt);
-    Chargeable.call(this, attrs);
-}
-Decoration.inheritsFrom(Chargeable);
-

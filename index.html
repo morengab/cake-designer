@@ -52,19 +52,20 @@
             </figure>
         </div>
         <div id="receipt">
-            <table>
+            <!-- <table>
                 <tr>
                     <th>Item</th>
                     <th>Quantity</th>
                     <th>Price</th>
                 </tr>
                 
-            </table>
+            </table> -->
             <div id="total">$0.00</div>           
         </div>
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/chargeable.js"></script>
     <script src="js/decoration.js"></script>
@@ -73,7 +74,10 @@
     <script src="js/nav.js"></script>
     <script src="js/main.js"></script>
     <script>
-        var cake = new Cake({}, document.getElementById("my_cake"));
+        var cake = new Cake({}, document.getElementById("my_cake")),
+            palette = document.getElementById("palette"),
+            receipt = document.getElementById("receipt"),
+            undo = [];
     </script>
 </body>
 </html>
