@@ -59,7 +59,7 @@ Decoration.inheritsFrom(Chargeable);
 $(document).ready(function(){
 
     $(this).keydown(function (e) {
-        if (e.keyCode === 8) {
+        if (e.keyCode === 68) {
             if (document.contains(selected_deco)) {
                 var deleted = palette.removeChild(selected_deco);
                 undo.push(deleted);

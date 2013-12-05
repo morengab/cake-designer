@@ -1,7 +1,11 @@
 # Project Ganache
 Design your own wedding cake.
 
+# Author
+Gaby Moreno Cesar (gmorenoc)
+
 ## Run
+open "Terminal"
 cd into p4/
 enter "python -m SimpleHTTPServer"
 open "http://localhost:8000/"
