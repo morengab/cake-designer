@@ -89,5 +89,5 @@ Cake.prototype.setSize = function(size) {
 Cake.prototype.draw = function (context) {
     this.updateSize();
     this.updateFlavor();
-    this.updateReceipt();
+    // this.updateReceipt();
 }

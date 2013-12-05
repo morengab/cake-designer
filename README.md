@@ -4,6 +4,7 @@ Design your own wedding cake.
 ## Run
 cd into p4/
 enter "python -m SimpleHTTPServer"
+open "http://localhost:8000/"
 
 ## Libraries
 * jQuery

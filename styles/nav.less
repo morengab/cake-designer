@@ -37,11 +37,11 @@
         font-family: @DECORATIVE_FONT;
         font-size: @NAV_TEXT_SIZE;
         margin-bottom: 10px;
-        opacity: @NAV_BUTTON_OPACITY;
+        opacity: .8;
         transition: opacity @NAV_BUTTON_ANIM_TIME ease-in;
 
         &:hover {
-            opacity: 1.0;
+            opacity: @NAV_BUTTON_OPACITY;
             cursor: pointer;
         }
     }  
@@ -67,12 +67,19 @@
 }
 
 .bottom_nav {
-    // border: 1px solid black;
     text-align: center; 
-    padding-right: 20px;
+    background-color: white;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
 
     li {
         display: inline;
+    }
+
+    .shadow(0px, 3px, 8px, 0px, @HEADER_SHADOW);
+
+    &:hover {
+        .shadow(0px, 0px, 8px, 0px, @HEADER_SHADOW);
     }
 }
 

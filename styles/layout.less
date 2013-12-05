@@ -2,12 +2,13 @@
 
 html, body {
     height: 100%;
+    background: #ffffff url('../img/shl.png') repeat right top;
 }
 
 #container {
-    height: 95%;
+    height: 100%;
     position: relative;
-    border-top: 4px solid steelblue;
+    border-top: 4px solid black;
 }
 
 .left_col {
@@ -15,7 +16,6 @@ html, body {
     width: 22 - 2*@LAYOUT_PADDING;
     float: left;
     z-index: 100;
-    // border: 1px solid black;
     padding: @LAYOUT_PADDING;
 }
 
@@ -26,7 +26,6 @@ html, body {
     min-width: 445px;
     float: left;
     position: relative;
-    // border: 1px solid black;
 }
 
 .right_col {
@@ -34,7 +33,6 @@ html, body {
     width: 22- 2*@LAYOUT_PADDING;
     padding: @LAYOUT_PADDING;
     height: 100 - 2*@LAYOUT_PADDING;
-    // border: 1px solid black;
 }
 
 .top_nav {
@@ -42,13 +40,10 @@ html, body {
     position: absolute;
     top: 0px;
     z-index: 100;
-    // border: 1px solid black;
 }
 
 .bottom_nav {
     width: 100%;
     position: absolute;
     bottom: 0px;
-    // z-index: -100;
-    // border: 1px solid black;
 }
