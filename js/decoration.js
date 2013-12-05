@@ -2,7 +2,7 @@ var selected_deco = undefined;
 
 function Decoration(attrs, type) {
     var deco = document.createElement("div"),
-        del = document.createElement("a");
+        img = new Image();
         
     var dflt = {
         elem: deco,
@@ -15,7 +15,9 @@ function Decoration(attrs, type) {
     deco.className = "deco";
     deco.setAttribute("data-type", type);
     
+    img.src = "img/"+type+".svg";
 
+    deco.appendChild(img);
     palette.appendChild(deco);
 
     $(deco).draggable({

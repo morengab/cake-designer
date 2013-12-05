@@ -58,7 +58,6 @@
 
     [data-flavor="concord"] {
         background-color: white;
-        border: 1px solid black;
     }
 
     [data-flavor="italian_wedding"] {
@@ -68,6 +67,12 @@
 
 .tier {
     margin: 0 auto;
+    .rounded_top(50px, 25px);
+    .shadow(0px, 3px, 8px, 0px, @HEADER_SHADOW);
+
+    &:hover {
+        .shadow(0px, 0px, 8px, 0px, @HEADER_SHADOW);
+    }
 }
 
 #receipt {

@@ -13,36 +13,76 @@
 @BUTTERFLY_HEIGHT: 50px;
 
 .deco {
-    width: 15px;
-    height: 15px;
+    height: 70px;
     position: absolute;
     top: 50%;
-    border: 1px solid blue;
+
+    img {
+        // width: 35px;
+        height: 100%;
+        opacity: 1.0;
+        transition: opacity @NAV_BUTTON_ANIM_TIME_FAST ease-in;
+
+        &:hover {
+            opacity: @NAV_BUTTON_OPACITY;
+            cursor: pointer;
+        }
+    }
 }
 
 #palette {
-    [data-type="sm_bow"] {
-        background-color: black;
+
+    [data-type="sm_bow"] img {
+        // background-color: black;
+        height: 60%;
     }
-    [data-type="bow"] {
-        background-color: black;
+    [data-type="bow"] img {
+        // background-color: black;
     }
-    [data-type="rose"] {
-        background-color: black;
+    [data-type="rose"] img {
+        // background-color: black;
+        height: 80%;
     }
-    [data-type="bouquet"] {
-        background-color: black;
+    [data-type="bouquet"] img {
+        // background-color: black;
     }
-    [data-type="butterfly"] {
-        background-color: black;
+    [data-type="butterfly"] img {
+        // background-color: black;
     }
 }
 
+// .deco_options {
+//     height: 70px;
+    
+//     li {
+//         margin-left: 20px;
+//         margin-right: 20px;
+//     }
+//     img {
+//         height: 100%;
+//     }
+//     [data-deco="butterfly"] {
+        
+//     }
+//     [data-deco="bow"] {
+        
+//     }
+//     [data-deco="sm_bow"] {
+//         height: 60%;
+//     }
+//     [data-deco="bouquet"] {
+        
+//     }
+//     [data-deco="rose"] {
+//         height: 80%;
+//     }
+// }
+
 .hover {
-    border: 1px solid white;
+    
 }
 
 .selected {
-    border: 1px solid orange;
+    
 }
 
