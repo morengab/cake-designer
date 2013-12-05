@@ -5,8 +5,54 @@
 @NAV_LG_TIER_WIDTH: 125px;
 @NAV_LG_TIER_HEIGHT: 50px;
 
+// menus
+@NAV_BUTTON_OPACITY: 0.3;
+@NAV_BUTTON_ANIM_TIME: 0.5s;
+
+.nav_button {
+    width: 32px;
+    height: 32px;
+    opacity: @NAV_BUTTON_OPACITY;
+    transition: opacity @NAV_BUTTON_ANIM_TIME ease-in;
+
+    &:hover {
+        opacity: 1.0;
+        cursor: pointer;
+    }
+}
+
+.nav_button_active {
+    opacity: 1.0 !important;
+    &:hover {
+        opacity: @NAV_BUTTON_OPACITY;
+        cursor: pointer;
+    }
+}
+
+#main_nav {
+    font-family: @HEADER_FONT;
+    
+    
+    h2 {
+        font-size: @HEADER_TEXT_SIZE;
+        margin-bottom: 35px;
+    }
+    
+    li {
+        font-family: @DECORATIVE_FONT;
+        font-size: @NAV_TEXT_SIZE;
+        margin-bottom: 10px;
+        opacity: @NAV_BUTTON_OPACITY;
+        transition: opacity @NAV_BUTTON_ANIM_TIME ease-in;
+
+        &:hover {
+            opacity: 1.0;
+            cursor: pointer;
+        }
+    }  
+}
+
 .nav_tier {
-    // the looks goes here
     background-color: beige;
 }
 
@@ -18,4 +64,22 @@
 .large_tier {
     width: @NAV_LG_TIER_WIDTH;
     height: @NAV_LG_TIER_HEIGHT;
+}
+
+.top_nav {
+    text-align: center;
+    margin-top: 3%;
+
+    li {
+        display: inline;
+    }
+}
+
+.bottom_nav {
+    // border: 1px solid black;
+    text-align: center; 
+
+    li {
+        display: inline;
+    }
 }

@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <title>A Cake Studio</title>
-
+    
+    <link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link rel="stylesheet/less" type="text/css" href="styles/main.less" />
     <script src="lib/less-1.5.0.min.js"></script>
     
@@ -13,57 +15,48 @@
 
 <body>
     <div id="container">
+        <nav class="top_nav">
+            <ul class="deco_options">
+                <li><img data-deco="sm_bow" class="nav_button" src="img/grid.png"></li>
+                <li><img data-deco="bow" class="nav_button" src="img/grid.png"></li>
+                <li><img data-deco="rose" class="nav_button" src="img/grid.png"></li>
+                <li><img data-deco="bouquet" class="nav_button" src="img/grid.png"></li>
+                <li><img data-deco="butterfly" class="nav_button" src="img/grid.png"></li>
+            </ul>
+        </nav>
+
         <nav id="main_nav" class="left_col">
-            <ul>
-                <li>
-                    <p>Size</p>
-                    <ul class="size_options">
-                        <li>
-                            <button data-size="small">Small</button>
-                        </li>
-                        <li>
-                            <button data-size="large">Large</button>
-                        </li>
-                        <li>
-                            <button data-size="tiered">Tiered</button>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <p>Decorations</p>
-                    <ul class="deco_options">
-                        <li><button data-deco="sm_bow">Small Bow</button></li>
-                        <li><button data-deco="bow">Bow</button></li>
-                        <li><button data-deco="rose">Rose</button></li>
-                        <li><button data-deco="bouquet">Bouquet</button></li>
-                        <li><button data-deco="butterfly">Butterfly</button></li>
-                    </ul>
-                </li>
+            <h2>Flavors</h2>
+            <ul class="flavor_options">
+                <li><p data-flavor="chocolate">Chocolate</p></li>
+                <li><p data-flavor="carrot">Carrot</p></li>
+                <li><p data-flavor="dulce_de_leche">Dulce de Leche</p></li>
+                <li><p data-flavor="concord">Concord</p></li>
+                <li><p data-flavor="italian_wedding">Italian Wedding</p></li>
             </ul>
         </nav>
   
         <div class="main_col">
-            <!-- <div class="top_col"></div> -->
-            
             <div id="palette">
                 <figure id="my_cake">
                     <div class="tier"></div>
                 </figure>
             </div>
-            <nav class="bottom_nav">
-                <ul class="flavor_options">
-                    <li><button data-flavor="chocolate">Chocolate</button></li>
-                    <li><button data-flavor="carrot">Carrot</button></li>
-                    <li><button data-flavor="dulce_de_leche">Vanilla Dulce de Leche</button></li>
-                    <li><button data-flavor="concord">Concord</button></li>
-                    <li><button data-flavor="italian_wedding">Italian Wedding</button></li>
-                </ul>
-            </nav>
         </div>
         
         <div id="receipt" class="right_col">
-            <div id="total">$0.00</div>           
+            <h2 id="total">$0.00</h2>           
         </div>
+
+        <nav class="bottom_nav">
+            <ul class="size_options">
+                <li><img data-size="small" class="nav_button" src="img/grid.png"></li>
+                <li><img data-size="large" class="nav_button" src="img/grid.png"></li>
+                <li><img data-size="tiered" class="nav_button" src="img/grid.png"></li>
+            </ul>
+        </nav>
+
+        
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
