@@ -5,10 +5,10 @@ Design your own wedding cake.
 Gaby Moreno Cesar (gmorenoc)
 
 ## Run
-open "Terminal"
-cd into p4/
-enter "python -m SimpleHTTPServer"
-open "http://localhost:8000/"
+* open "Terminal"
+* cd into p4/
+* enter "python -m SimpleHTTPServer"
+* open "http://localhost:8000/"
 
 ## Libraries
 * jQuery
