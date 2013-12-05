@@ -53,6 +53,7 @@ function Decoration(attrs, type) {
 }
 Decoration.inheritsFrom(Chargeable);
 
+
 $(document).ready(function(){
 
     $(this).keydown(function (e) {

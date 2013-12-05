@@ -1,29 +1,39 @@
 // SIZES
-@SM_TIER_WIDTH: 100px; 
-@SM_TIER_HEIGHT: 50px;
+@SM_TIER_WIDTH: 70%; 
+@SM_TIER_HEIGHT: 50%;
 
-@LG_TIER_WIDTH: 150px;
-@LG_TIER_HEIGHT: 50px;
+@LG_TIER_WIDTH: 100%;
+@LG_TIER_HEIGHT: 50%;
+
+@CAKE_WIDTH: 400px; 
+@CAKE_HEIGHT: 3/5 * (@CAKE_WIDTH);
 
 #palette {
     border: 1px solid black;
-    width: 50%;
-    float: left;
+    height: 80%;
     position: relative;
+    text-align: center;
+    background: none repeat scroll 0 0 clear;
 }
 
-.tier {
-    background-color: pink;
-    margin: 0 auto;
+#palette:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 #my_cake {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto; 
+    width: @CAKE_WIDTH;
+    height: @CAKE_HEIGHT;
+    margin-left: auto;
+    margin-right: auto; 
     border: 1px solid red; 
 
+    display: inline-block;
+    padding: 10px 15px;
+    vertical-align: middle;
+    
     [data-size="small"] {
         width: @SM_TIER_WIDTH;
         height: @SM_TIER_HEIGHT;
@@ -54,4 +64,8 @@
     [data-flavor="italian_wedding"] {
         background-color: grey;
     }
+}
+
+.tier {
+    margin: 0 auto;
 }
