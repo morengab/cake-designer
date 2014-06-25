@@ -10,8 +10,11 @@ Gaby Moreno Cesar (gmorenoc)
 * enter "python -m SimpleHTTPServer"
 * open "http://localhost:8000/"
 
+## Shortcuts
+* d - Delete
+* z - Undo delete
+
 ## Libraries
-* jQuery
 * LESS
 
 ## Features
