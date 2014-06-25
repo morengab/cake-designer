@@ -12,7 +12,7 @@ Gaby Moreno Cesar (gmorenoc)
 
 ## Libraries
 * jQuery
-* jQuery UI
+* LESS
 
 ## Features
 * Choose size
